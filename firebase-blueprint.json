@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "gallery_custom_images": {
+      "title": "Gallery Custom Images",
+      "description": "Photos personnalisées ajoutées à la galerie du John Medical Center",
+      "properties": {
+        "src": { "type": "string" },
+        "alt": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["src"]
+    },
+    "gallery_removed_defaults": {
+      "title": "Gallery Removed Default Images",
+      "description": "IDs des photos par défaut masquées",
+      "properties": {
+        "imageId": { "type": "string" },
+        "removedAt": { "type": "string" }
+      },
+      "required": ["imageId"]
+    }
+  },
+  "securityRules": {
+    "firestore": "rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    match /{document=**} {\n      allow read, write: if true;\n    }\n  }\n}"
+  }
+}

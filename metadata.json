@@ -1,0 +1,6 @@
+{
+  "name": "Centre Médical Jacques-Marie",
+  "description": "Application web du Centre Médical Jacques-Marie (JMC) - Services médicaux, urgences, demandes de stage et campagnes de santé.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
